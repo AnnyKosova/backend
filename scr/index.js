@@ -53,7 +53,7 @@ const server = http.createServer((request, response) => {
     response.end();
 });
 
-const PORT = 3003;
+const PORT = process.env.PORT || 3000;
 const HOST = '127.0.0.1';
 
 server.listen(PORT, HOST, () => {
